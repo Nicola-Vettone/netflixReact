@@ -1,10 +1,11 @@
 import { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 
 class Gallery1 extends Component {
   state = {
     films: [],
     name: this.props.film,
+    isLoading: true,
   };
 
   fetchImg = async () => {
@@ -15,11 +16,14 @@ class Gallery1 extends Component {
         throw new Error("Errore nel recupero dei film");
       }
       const data = await response.json();
+
       console.log("Film recuperati:", data.Search);
 
       this.setState({ films: data.Search });
     } catch (error) {
       console.error("Errore nel recupero dei film:", error);
+    } finally {
+      this.setState({ isLoading: false });
     }
   };
 
@@ -31,6 +35,11 @@ class Gallery1 extends Component {
     return (
       <Container className="my-4">
         <h3>{this.props.title}</h3>
+        {this.state.isLoading && (
+          <Spinner animation="border" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        )}
         <Row>
           {this.state.films.slice(0, 6).map((film) => (
             <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3">
