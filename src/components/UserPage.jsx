@@ -16,7 +16,7 @@ const UserPage = (props) => {
             <p className="name fs-3 bg-secondary px-3">{props.name}</p>
             <h3 className="fs-4">Language:</h3>
             <Form.Group>
-              <Form.Select className="bg-black border border-1 rounded-0 text-white px-2 py-1 languages fs-5">
+              <Form.Select className="bg-black border border-1 rounded-0 text-white px-2 py-1 fs-5">
                 <option selected>English</option>
                 <option>Italian</option>
                 <option>Deutsch</option>

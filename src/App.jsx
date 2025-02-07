@@ -3,8 +3,10 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import TopBar from "./components/TopBar";
-import Gallery1 from "./components/Gallery1";
-import Geners from "./components/Geners";
+import Settings from "./components/settings";
+/* import Gallery1 from "./components/Gallery1";
+import Geners from "./components/Geners"; */
+
 {
   /*import UserPage from "./components/UserPage";*/
 }
@@ -17,11 +19,13 @@ function App() {
       <Container fluid>
         <TopBar />
         <Container fluid>
-          <Geners />
+          {/* <Geners />
           <Gallery1 film="avengers" title="Avengers" />
           <Gallery1 film="batman" title="Batman" />
-          <Gallery1 film="Harry-potter" title="Harry Potter" />
+          <Gallery1 film="Harry-potter" title="Harry Potter" /> */}
           {/*<UserPage name="Nico" img={avatar} />*/}
+          <Settings />
+
           <Footer />
         </Container>
       </Container>

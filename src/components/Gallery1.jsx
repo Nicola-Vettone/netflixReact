@@ -42,7 +42,7 @@ class Gallery1 extends Component {
         )}
         <Row>
           {this.state.films.slice(0, 6).map((film) => (
-            <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3 px-2">
+            <Col key={film.imdbID} xs={6} md={4} lg={4} xl={2} className="mb-3 px-2">
               <img src={film.Poster} alt={film.Title} className="img-fluid cover" />
             </Col>
           ))}
