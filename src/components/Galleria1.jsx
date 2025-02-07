@@ -28,6 +28,7 @@ class Galleria1 extends Component {
   render() {
     return (
       <Container className="my-4">
+        <h3>Film che ti piacciono</h3>
         <Row>
           {this.state.films.slice(0, 6).map((film) => (
             <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3">
