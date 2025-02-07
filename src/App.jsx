@@ -11,9 +11,8 @@ import Geners from "./components/Geners"; */
   /*import UserPage from "./components/UserPage";*/
 }
 function App() {
-  {
-    /*const avatar = "https://cdn-icons-png.flaticon.com/512/149/149071.png";*/
-  }
+  const avatar = "https://cdn-icons-png.flaticon.com/512/149/149071.png";
+
   return (
     <div className="bg-dark min-vh-100 text-light">
       <Container fluid>
@@ -24,7 +23,7 @@ function App() {
           <Gallery1 film="batman" title="Batman" />
           <Gallery1 film="Harry-potter" title="Harry Potter" /> */}
           {/*<UserPage name="Nico" img={avatar} />*/}
-          <Settings />
+          <Settings name="Nico" img={avatar} />
 
           <Footer />
         </Container>
