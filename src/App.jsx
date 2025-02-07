@@ -12,9 +12,10 @@ function App() {
     <div className="bg-dark min-vh-100 text-light">
       <Container fluid>
         <TopBar />
-        <Gallery1 />
-        <Galleriy2 />
-        <Galleriy3 />
+        <Gallery1 film={"avengers"} />
+        <Gallery1 film={"batman"} />
+        <Gallery1 film={"Harry"} />
+
         <Footer />
       </Container>
     </div>

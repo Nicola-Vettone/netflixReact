@@ -4,11 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 class Gallery1 extends Component {
   state = {
     films: [],
+    name: this.props.film,
   };
 
   fetchImg = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=d9bd69eb&s=batman");
+      const response = await fetch(`http://www.omdbapi.com/?apikey=d9bd69eb&s=${this.state.name}`);
+      console.log(this.state.name);
       if (!response.ok) {
         throw new Error("Errore nel recupero dei film");
       }
