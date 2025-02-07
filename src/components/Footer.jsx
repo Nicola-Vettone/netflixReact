@@ -2,7 +2,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container className="text-center text-light mt-5">
+    <Container className=" text-light mt-5">
       <Row className="justify-content-center">
         <Col xs={6}>
           <Row className="mb-2">
@@ -36,7 +36,59 @@ const Footer = () => {
                 </a>
               </p>
             </Col>
+            <Col>
+              <p>
+                <a href="#" className="text-secondary">
+                  Audio Description
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Investor Relations
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Legal Notices
+                </a>
+              </p>
+            </Col>
+            <Col>
+              <p>
+                <a href="#" className="text-secondary">
+                  Help Center
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Jobs
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Cookie Preferences
+                </a>
+              </p>
+            </Col>
+            <Col>
+              <p>
+                <a href="#" className="text-secondary">
+                  Gift Cards
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Terms of Use
+                </a>
+              </p>
+              <p>
+                <a href="#" className="text-secondary">
+                  Corporate Information
+                </a>
+              </p>
+            </Col>
           </Row>
+
           <Row>
             <Col>
               <Button variant="outline-secondary" size="sm" className="rounded-0 mt-3">
