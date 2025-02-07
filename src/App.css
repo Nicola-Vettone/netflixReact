@@ -2,9 +2,8 @@ a {
   text-decoration: none;
 }
 .cover {
-  width: 100%;
-  height: 145px;
   object-fit: cover;
+  overflow: hidden;
 }
 .cover:hover {
   transform: scale(1.1) translateY(-10px);
