@@ -1,14 +1,14 @@
 import { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-class Galleria1 extends Component {
+class Galleriy2 extends Component {
   state = {
     films: [],
   };
 
   fetchImg = async () => {
     try {
-      const response = await fetch("http://www.omdbapi.com/?apikey=d9bd69eb&s=batman");
+      const response = await fetch("http://www.omdbapi.com/?apikey=d9bd69eb&s=Harry+Potter");
       if (!response.ok) {
         throw new Error("Errore nel recupero dei film");
       }
@@ -28,7 +28,7 @@ class Galleria1 extends Component {
   render() {
     return (
       <Container className="my-4">
-        <h3>Film che ti piacciono</h3>
+        <h3>I tuoi preferiti</h3>
         <Row>
           {this.state.films.slice(0, 6).map((film) => (
             <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3">
@@ -41,4 +41,4 @@ class Galleria1 extends Component {
   }
 }
 
-export default Galleria1;
+export default Galleriy2;
