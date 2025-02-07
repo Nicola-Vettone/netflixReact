@@ -9,9 +9,9 @@ function App() {
     <div className="bg-dark min-vh-100 text-light">
       <Container fluid>
         <TopBar />
-        <Gallery1 film={"avengers"} />
-        <Gallery1 film={"batman"} />
-        <Gallery1 film={"Harry"} />
+        <Gallery1 film="avengers" title="Avengers" />
+        <Gallery1 film="batman" title="Batman" />
+        <Gallery1 film="Harry-potter" title="Harry Potter" />
 
         <Footer />
       </Container>
