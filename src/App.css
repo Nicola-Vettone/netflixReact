@@ -6,3 +6,7 @@ a {
   height: 180px;
   object-fit: cover;
 }
+.cover:hover {
+  transform: scale(1.1) translateY(-10px);
+  cursor: pointer;
+}
