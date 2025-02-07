@@ -33,7 +33,7 @@ class Gallery1 extends Component {
 
   render() {
     return (
-      <Container className="my-4">
+      <Container fluid className="my-4">
         <h3>{this.props.title}</h3>
         {this.state.isLoading && (
           <Spinner animation="border" role="status">
@@ -42,8 +42,8 @@ class Gallery1 extends Component {
         )}
         <Row>
           {this.state.films.slice(0, 6).map((film) => (
-            <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3">
-              <img src={film.Poster} alt={film.Title} className="img-fluid" />
+            <Col key={film.imdbID} xs={6} md={4} lg={3} xl={2} className="mb-3 px-1">
+              <img src={film.Poster} alt={film.Title} className="img-fluid cover" />
             </Col>
           ))}
         </Row>
